@@ -16,5 +16,5 @@ run it: > uvicorn test_serv:app --port 8001
 4. Build docker container with exposed port 8000
 or
 5. run by: > uvicorn main:app --port 8000
-open url: localhost:8000/docs
-swagger will help
+open url: http://localhost:8000/docs
+The Swagger will help
