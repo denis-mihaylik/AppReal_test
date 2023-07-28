@@ -77,6 +77,8 @@ def filter_records(chunk_data: bytes) -> struct:
             print('Bad row. Inconsistency with expected schema')
             continue
         if b"sale" in record.title.lower() or b"sale" in record.description.lower():
+        # match = re.search('sale', record.title + record.description, flags=re.IGNORECASE)  #  Regexp (do not understood why need to use regexp)
+        #    if match:
             yield record
 
 
